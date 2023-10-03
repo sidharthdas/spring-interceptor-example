@@ -15,7 +15,7 @@ public class TestHandlerInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         logger.info("in TestHandlerInterceptor:preHandle()");
 
-        return false;
+        return true;
     }
 
     @Override
